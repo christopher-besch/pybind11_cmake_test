@@ -1,6 +1,8 @@
 ## Resources
 
 - [pybind11 docs](https://pybind11.readthedocs.io/en/stable/compiling.html#building-with-cmake)
+- [smrfeld/cmake_cpp_pybind11_tutorial](https://github.com/smrfeld/cmake_cpp_pybind11_tutorial)
+- [Real Python](https://realpython.com/python-bindings-overview/#pybind11)
 
 ## Compilation
 
