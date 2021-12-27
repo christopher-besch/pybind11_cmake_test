@@ -8,7 +8,7 @@ void init_my_math(pybind11::module& m)
     m.def("sub", &sub, "add function");
 }
 
-PYBIND11_MODULE(my_math_python, m)
+PYBIND11_MODULE(my_math, m)
 {
     m.doc() = "My math example library.";
 

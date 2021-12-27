@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(python_test)
+project(pybind11_cmake_test)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# find_package could also be used if that's your cup of tea
 add_subdirectory("vendor/pybind11")
 
 # use warnings and multi threading
@@ -19,5 +20,5 @@ elseif("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
   )
 endif()
 
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/my_math_core")
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/my_math")
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/python_binds")
