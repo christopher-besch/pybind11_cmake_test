@@ -1,10 +1,14 @@
+## Resources
+
+- [pybind11 docs](https://pybind11.readthedocs.io/en/stable/compiling.html#building-with-cmake)
+
 ## Compilation
 
 ```
 git clone https://github.com/christopher-besch/pybind11_cmake_test --recurse
 cd pybind11_cmake_test
 mkdir build && cd build
-# '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON' is optional and only used for by certein IDEs for static analysis
+# '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON' is optional and only used by certein IDEs for static analysis
 cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 # '-j4' uses 4 threads; can be set to anything
 cmake --build . -j4
