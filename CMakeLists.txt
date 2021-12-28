@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # find_package could also be used if that's your cup of tea
-add_subdirectory("vendor/pybind11")
+add_subdirectory("${CMAKE_SOURCE_DIR}/vendor/pybind11")
 
 # use warnings and multi threading
 if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
